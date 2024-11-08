@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-br"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Site com Fundo Escurecido</title> 
+  <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('https://i.pinimg.com/736x/68/4b/95/684b95d75490fd9a7cef8163e5450226.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .button {
+            background-color: rgba(128, 128, 128, 0.5); /* Transparente cinza */
+            color: #fff;
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            text-decoration: none;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s, transform 0.1s; /* Transições suaves */
+        }
+
+        .button img {
+            width: 20px;
+            margin-right: 8px;
+        }
+
+        .button:hover {
+            background-color: red; /* Cor vermelha ao passar o mouse */
+        }
+
+        .button:active {
+            transform: scale(0.95); /* Efeito de encolher ao clicar */
+        }
+    </style> 
+ </head> 
+ <body> 
+  <div class="content"> 
+   <h1>🕷️</h1> <a href="https://www.instagram.com/slk.andr3y/profilecard/?igsh=MTlsajhwY3Z3amp5dw==" class="button"> <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Logo do Instagram"> Instagram </a> <a href="https://www.tiktok.com/@ebllw?_t=8qwdBQMzOkA&amp;_r=1" class="button"> <img src="https://play-lh.googleusercontent.com/k2Rc1A4sDLJ0YqomSvqb-hj6HeizgjdzpHrp-ERW7zgOHvCu4YDmvTpxY8fjR6duhyc=w480-h960-rw" alt="Logo do TikTok"> TikTok </a> <a href="https://open.spotify.com/playlist/7sdMzsAcKJOJAjfVYjbBN5?si=98ysnxYyR4qzE26SJIr8tw&amp;pi=lF9qSc-4SMO9N" class="button"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNaTV_VD20fcjJ6KVMVDsK097njrbIkBZGpQ&amp;s" alt="Logo do Spotify"> Spotify </a> 
+  </div> 
+ 
+</body></html>
